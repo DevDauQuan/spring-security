@@ -1,0 +1,22 @@
+employeCtrl
+queryCtrl
+
+addEmployee:
+	 (check Id duplicate) check khoa ngoai
+	(update)Insert member (check group existed)
+	- getall
+
+infor cần 
+task || estimate (dev , unittest , testing)
+
+1. API để lấy thông tin về danh sách các BU trong hệ thống
+
+2. API để thêm mới một user vào cơ sở dữ liệu 
+	- Check Idap có tồn tại hay chưa (err.id=1, err.message=" Idap existed ").
+	- Check hcc_id có tồn tại hay chưa (err.id=2, err.message=" hcc_id existed ").
+	- Check email có tồn tại hay chưa (err.id=3, err.message=" email existed ").
+	- Get all BusiessUnit để end user chọn.
+	- Nếu chưa có BU chuyển đến bước 3
+
+3. API để thêm mới một BU vào cơ sở dữ liệu (nếu người dùng tạo BU mới)
+
